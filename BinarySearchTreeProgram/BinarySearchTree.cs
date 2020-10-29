@@ -49,12 +49,18 @@ namespace BinarySearchTreeProgram
                 this.leftCount++;
                 this.LeftTree.Display();
             }
+
             Console.WriteLine(this.NodeData.ToString());
             if (this.RightTree != null)
             {
                 this.rightCount++;
                 this.RightTree.Display();
             }
+
+        }
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
         }
     }
 }
